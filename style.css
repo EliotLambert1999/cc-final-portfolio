@@ -4,6 +4,7 @@ body {
   font-family: monospace;
   padding: 1rem;
   display: flex;
+  justify-content: center;
 }
 
 h1 {
@@ -22,7 +23,7 @@ p {
 
 button {
   background-color: black;
-  border: none;
+  border: 1px solid blue;
   color: white;
   padding: 0.625rem;
   width: 100%;
@@ -38,6 +39,7 @@ nav {
 
 main {
   width: 100%;
+  max-width: 1200px;
   padding: 0.5rem;
 }
 

@@ -8,8 +8,9 @@ body {
 }
 
 h1 {
-  color: #373fff;
+  color: blue;
   font-size: 1.5rem;
+  text-decoration: underline;
 }
 
 h2 {
@@ -17,19 +18,8 @@ h2 {
 }
 
 p {
-  font-size: 0.75rem;
-  line-height: 1.5;
-}
-
-button {
-  background-color: black;
-  border: 1px solid blue;
-  color: white;
-  padding: 0.625rem;
-  width: 100%;
   font-size: 1rem;
-  margin: 1.875rem 0.125rem;
-  cursor: pointer;
+  line-height: 1.5;
 }
 
 nav {
@@ -69,5 +59,3 @@ img {
     flex-direction: column;
   }
 }
-
-/* Additional styles if needed */

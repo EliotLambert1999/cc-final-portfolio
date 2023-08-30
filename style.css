@@ -11,12 +11,12 @@ h1 {
   color: #373fff;
   font-size: 18pt;
 }
-.special-h2{
-  margin-top:0;
+.special-h2 {
+  margin-top: 0;
 }
 h2 {
   font-size: 18pt;
-/*   margin-top:0; */
+  /*   margin-top:0; */
 }
 
 button {
@@ -61,7 +61,7 @@ p {
   display: inline-block;
 }
 
-.nav {
+nav {
   padding: 2%;
   width: 26%;
   height: 100%;
@@ -182,11 +182,6 @@ body .gist .gist-meta {
   line-height: 27px;
   cursor: pointer;
 }
-.nav-link a,
-.nav-link a:visited {
-  color: black;
-  text-decoration: none;
-}
 
 #toggle {
   display: none;
@@ -234,6 +229,6 @@ body .gist .gist-meta {
   float: left;
 }
 
-.nav{
+.nav {
   display: none;
 }

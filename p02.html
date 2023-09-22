@@ -20,11 +20,26 @@
     
     <!-- main content -->
     <main>
-      I was inspired by popularized phrases from the reality TV show 'Love Island' to create a form generator. 'Don't put your eggs in one basket' is repeated like a spiritual mantra on the show, and was my inspiration for this piece. These phrases have become universal, yet when decontextualized from the bizarre world of reality TV and heternormative dating, they seem complicately arbitrary in describing romance. To explore this, I randomized the order of the phrases in the middle of the canvas that are delivered everytime the user presses the mouse. I defined the index and randomized its ordering at the bottom to switch between the five phrases that I had stated. Next, I wanted the oval shapes lined down the middle to resemble both eggs and human faces so that they could switch from one the other when toggled over with a mouse, to emphasise the forms morphing into eachother. After plotting out the dimensions of the ellipses, I defined the left and right boundary so that I could define the mouseX variable. The faces are silly and playful and seek to further parody the phrases. I made use of stroke to outline the bold text and eyes, to make the saturated colours pop. 
-     
+I was inspired by popularized phrases from the reality TV show 'Love Island' to create a form generator, switching between egg-shaped black holes and playful/silly faces. I started thinking about Love Island’s most popularized phrases, and came up with:
+"HE'S NOT MY TYPE ON PAPER", "DON'T PUT ALL YOUR EGGS IN ONE BASKET", "DON'T MUG ME OFF!", "MY HEAD'S BEEN TURNED","YOU ARE WELL FIT"
+
+‘Don’t put all your eggs in one basket’ has become a spiritual mantra for Love Island followers and for many heterosexual daters - and I am curious about how arbitrary it sounds when decontextualized from the bizarre world of reality TV.I wanted to explore that arbitrariness through randomizing the order of the five phrases (by defining the index then randomizing it). The phrase changes every time the mouse is clicked by the user.
+
       <p>
         
+  function mousePressed() {
+  index = int(random(0, texts.length))
+
+     
+      <p>
+Next, I thought about the form - I wanted oval shapes to line up symmetrically down the middle, resembling both eggs and human faces to emphasize the forms morphing into each other. After plotting out the dimensions of the ellipses, I defined the left and right boundary so that I could define the mouseX variable. 
+"let leftBoundary = 100;
+ let rightBoundary = 300;"  
       </p>
+      The form I chose to experiment with wasn’t exactly complex - but it helped me to explore random,mouseX/Y,and mousepressed functions. I am happy with the playfulness of the piece - the saturated colors and stroke weight outlining the text and eyes acts as a homage to the saturation of pop culture and reality TV - both in a nostalgic and a slightly disturbing way. 
+
     </main>
+If I were to develop this, I would randomize the position of the text, and make each face appear at a different hovering time to emphasize their varied expressions.
+    
   </body>
 </html>

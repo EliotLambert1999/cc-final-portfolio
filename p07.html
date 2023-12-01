@@ -98,7 +98,7 @@ The advances/green texts are examples of situations/comments that lead to you se
       
       
       
-      <h1>Visuals  </h1>
+      <h1>Proposed Visuals  </h1>
       <br><br>
       
       <h1>Beginning  </h1>
@@ -150,9 +150,26 @@ The advances/green texts are examples of situations/comments that lead to you se
     
 
       <h1>Process</h1>
+      <p>
       
-      After creating my project proposal, I began to code my scenes. I started with the first scene, the landing page, and after generating multiple different AI images on Midjourney, with
-      
+First, I adapted the game template that we were shown in class for my code. The code had scene switches and a player sprite that moved across scenes through collision detection. I started by coding the landing page. I preloaded an AI generated image from Midjourney that I had got from the prompt “a pixelated room of iphone screens with hinge dating profiles of men and women's faces blurred out on each screen. each face is a different skin color and different gender.” I made this prompt more specific, because the previous results for just ‘dating profiles of men and women’ generated only images of blonde women, and I wanted the faces to reflect more than just that homogenous demographic. 
+        <br><br>
+        The first scene needed a clear prompt of where to move the player sprite to enter the game, so I made a black rectangle in the middle of the screen with the text ‘enter if you dare’, and coded the sprite so that if it moved up to the halfway point on the canvas, the scene would switch to scene 1. 
+        <br><br>
+
+The next scene I coded was the falling text scene, the scene with the core game component. It proved to be the most time consuming to get right, as I wanted to simulate the experience of texting on an iphone. I had to create two classes of red and green text bubbles with differing text arrays depending on if the text messages were red or green flags. Then I had to randomize the position and change the speed of the falling text bubbles, so that the red text bubbles fell faster to make it harder for the sprite to dodge them.
+        <br><br>
+        Next, I had to define collision detection so that if the sprite collided with the red text bubble class, by entering into its defined parameters, then the scene would switch to the final scene, a black page with text saying ‘you’ve been ghosted!’ and lots of mini ghost emojis scrambling around the page. 
+
+<br><br>
+        This was the core code of my game. But after reviewing it a few times, I realized that another scene was necessary, because the game wasn’t long enough, and needed to be more engaging. I wanted to add a final scene in which users could input their own text to write to someone who had ghosted them, but then realized it would be better if that scene came before the falling text scene, so that the text inputted could be added to the red text bubble array, meaning that their text would show up in one of the falling text bubbles. This took a long time to get right, for some reason I had many problems with getting the text to be displayed, even when I could see through the console log that the text was being added to the array each time. I also made the text bubble in this second scene match the text bubbles from the falling text scene, to match the simulated phone aesthetic. Submitting the text adds it to the array/Hinge ether. 
+        <br><br>
+
+Finally, I added sound to the game, to contextualize it and make it more jarring/stressful/intriguing. I found a few Hinge adverts on Youtube and mixed extracts from them with extracts from a video that interviews 100 people and asks them if they’ve ever been ghosted. The sound created is a mix of interviewees complaining about being ghosted overlaid by a Hinge Ad claiming that the app is designed to be deleted - an excellent marketing ploy to boast the app’s success rate. This sound plays on the landing page, until the player goes into the text input scene, which triggers an AI-generated voiceover contextualizing your situation as a player stuck in the disappointing world of ghosting - you are told that your dating life is disastrous but that you should be brave and bold and text your date to meet again, which prompts you to input a text to someone. When the scene switches, the sound returns to the original mix from the first scene, then when you eventually lose the game and get ghosted, a slowed down sample from the advert saying ‘hinge, designed to be deleted’, plays ironically.
+      The final touch was to change the sprite from a pixelated heart-eyed figure to an AI-generated woman - I wanted to keep the AI-generated imagery theme consistent, and the pixel figure seemed to be out of place.
+        <br><br>
+        
+        <br><br>
       
       
           <h1>Reflection</h1>
